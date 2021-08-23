@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-header .container-fluid,
+.slider-section .container-fluid,
+.speciality-section .container-fluid,
+.populer-foods-section .container-fluid,
+.works-section .container-fluid,
+.gallery-section .container-fluid,
+.custumer-section .container-fluid,
+.order-section .container-fluid,
+.footer-section .container-fluid {
+    max-width: 1150px;
+}
+
+p,
+span,
+a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* main css */
+
+.main-header {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 17px -5px;
+}
+
+.logo span {
+    color: #787878;
+    font-weight: 700;
+}
+
+.primary-menu {}
+
+.primary-menu li {
+    list-style-type: none;
+}
+
+.primary-menu li a {
+    padding: 22px 15px;
+    text-decoration: none;
+    color: #787878;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.primary-menu li a:hover {
+    color: #FF3838;
+}
+
+
+/* linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), */
+
+
+/* slider-section */
+
+.speciality-section {
+    background: #F7F7F7;
+    height: 630px;
+    padding-top: 10px;
+}
+
+.slider-section {
+    background: url(img/home-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    padding: 200px 0;
+}
+
+.slider-text {
+    margin-top: 30px;
+}
+
+.slider-text h2 {}
+
+.slider-text p {
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.default-btn {
+    text-decoration: none;
+    color: #fe4848;
+    border: 2px solid #FE4848;
+    padding: 5px 15px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.default-btn::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #FE4848;
+    z-index: -1;
+    transition: .5s;
+}
+
+.default-btn:hover {
+    color: #fff;
+}
+
+.default-btn:hover::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    height: 100%;
+}
+
+.slider-pic img {
+    margin-top: -140px;
+}
+
+
+/* Specility section */
+
+.default-color {
+    color: #FE4848;
+    font-weight: 700;
+}
+
+.speciality-items {
+    background: #fff;
+    box-shadow: 1px 1px 12px -4px;
+    border-radius: 5px;
+    padding: 7px 18px;
+}
+
+.specility-icon {
+    padding: 20px 0;
+}
+
+.icon {
+    width: 45px;
+    margin: 0 auto;
+    height: 85px;
+}
+
+.specility-bottom {
+    background: #fff;
+    box-shadow: 1px 1px 12px -4px;
+    margin-top: 22px;
+    padding: 15px 6px;
+    border-radius: 5px;
+}
+
+.specility-bottom-icon {
+    padding: 10px 0;
+}
+
+
+/* ****************************************************************************** */
+
+.speciality-items {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.speciality-items:hover .hover-img {
+    height: 100%;
+}
+
+.speciality-items img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hover-img {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    margin-left: -18px;
+    transition: 0.7s;
+    border-radius: 5px;
+}
+
+.hover-img h2 {
+    position: absolute;
+    color: #ffffff;
+    padding: 3px 8px;
+    background: #f53535;
+    border-radius: 5px;
+    margin: 15px;
+    font-size: 25px;
+}
+
+
+/* ************************************************** */
+
+
+/* ********************************* */
+
+
+/* populer-foods-section */
+
+.populer-foods-section {
+    background: #F7F7F7;
+}
+
+.food-img {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.food-img img {
+    border-radius: 4px;
+    transition: .7s;
+}
+
+.food-img:hover img {
+    transform: scale(1.5);
+    transition: .7s;
+    display: inline-block;
+}
+
+
+/* .populer-food-text h4 {
+    color: #ffd700;
+    font-size: 25px;
+} */
+
+
+/* .populer-food-text span {
+    color: #ffd700;
+    font-size: 25px;
+} */
+
+.populer-food-text {
+    padding: 8px;
+}
+
+.food-img span {
+    position: absolute;
+    background: #fe4848;
+    border-radius: 5px;
+    color: #fff;
+    padding: 3px 8px;
+    margin: 10px;
+}
+
+.populer-food-items {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 1px 1px 12px -4px;
+    border-radius: 5px;
+}
+
+.poluler-food-items-bottom {
+    margin-top: 22px;
+}
+
+.img-height img {
+    height: 353px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* work section */
+
+.works-section {
+    background: #F7F7F7;
+}
+
+.work-img img {
+    border: 5px solid#ffffff;
+    margin: 0 auto;
+    height: 110px;
+    border-radius: 63%;
+    box-shadow: 1px 1px 12px -4px;
+}
+
+
+/* gallary section */
+
+.gallery-section {
+    background: #F7F7F7;
+}
+
+.gallary-items {
+    margin-top: 20px;
+    border: 6px solid #fff;
+    box-shadow: 1px 1px 12px -4px;
+}
+
+.gallery-bottom img {
+    margin-top: 20px;
+    border: 7px solid #fff;
+    box-shadow: 1px 1px 12px -4px;
+    width: 100%;
+    height: 200px;
+}
+
+
+/* ****************************************************************************** */
+
+.gallary-items {
+    width: 100%;
+    height: 92%;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallary-items:hover .hover-text {
+    height: 100%;
+}
+
+.gallary-items img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hover-text h4 {
+    margin-top: 25px;
+}
+
+.hover-text {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.808);
+    top: 0;
+    text-align: center;
+    overflow: hidden;
+    color: #000000;
+    transition: 0.7s;
+}
+
+
+/* ********************************* */
+
+.gallery-bottom {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 200px;
+}
+
+.hover-textb h4 {
+    margin-top: 45px;
+}
+
+.gallery-bottom img {
+    margin-top: 20px;
+    border: 7px solid #fff;
+    box-shadow: 1px 1px 12px -4px;
+    width: 100%;
+    height: 204px;
+}
+
+.gallery-bottom:hover .hover-textb {
+    height: 100%;
+    border-radius: 405px 341px 0 0;
+}
+
+.hover-textb {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.808);
+    top: 20px;
+    text-align: center;
+    overflow: hidden !important;
+    color: #000000;
+    transition: 0.7s;
+}
+
+
+/* ************************************************************************* */
+
+
+/* custumer */
+
+.custumer-section {
+    background: #F7F7F7;
+}
+
+.custumer-pic {
+    position: relative;
+}
+
+.custumer-pic img {
+    position: absolute;
+    width: 19%;
+    border-radius: 71%;
+    border: 5px solid #fff;
+    margin-left: -33px;
+    top: -26px;
+}
+
+.custumer-items {
+    margin-top: 45px;
+}
+
+.custumer-text {
+    background: #333333;
+    color: #fff;
+    padding-top: 41px;
+    padding-bottom: 10px;
+    border: 7px solid #fff;
+}
+
+.custumer-text span {
+    color: #fe4848;
+}
+
+.star {
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.star span {
+    color: #FFD700;
+    font-size: 13px;
+}
+
+
+/* order section */
+
+.order-section {
+    background: #F7F7F7;
+}
+
+.form-section span {
+    display: inline-block;
+    width: 48%;
+    padding-bottom: 20px;
+}
+
+.form-control {
+    border: 2px solid #ddd;
+    padding: 10px 10px;
+}
+
+textarea.form-control {
+    margin-bottom: 30px;
+}
+
+input.form-control.right {
+    margin-left: 22px;
+}
+
+.form-section {
+    width: 63%;
+    padding-left: 35px;
+}
+
+.order-img-left img {
+    width: 400px;
+    display: inline-block;
+    padding-left: 8px;
+}
+
+.full {
+    background: #fff;
+    padding: 20px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+/* footer-section */
+
+.footer-section {
+    background-color: #333333;
+}
+
+.footer-items {}
+
+.social-icon {}
+
+.social-icon ul {
+    padding-top: 20px;
+}
+
+.social-icon ul li {
+    display: inline-block;
+    padding: 3px 12px;
+    border: 2px solid #fe7575;
+    border-radius: 5px;
+    color: #fe7575;
+    ;
+}
+
+.social-text span {
+    color: #fe7575;
+}
+
+.social-text p {
+    color: #ddd;
+}
